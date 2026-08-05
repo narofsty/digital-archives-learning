@@ -11,13 +11,14 @@
             "id": "4a3d5b8c8352109a",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "数据库.base",
-                "viewName": "表格"
+                "file": "05_技术环境/常用命令.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "数据库"
+              "icon": "lucide-file",
+              "title": "常用命令"
             }
           }
         ]
@@ -202,6 +203,9 @@
   },
   "active": "4a3d5b8c8352109a",
   "lastOpenFiles": [
+    "数据库.base",
+    "05_技术环境/常用命令.md",
+    "03_档案系统知识/系统使用.md",
     "05_技术环境/Linux安装/Linux安装.md",
     "未命名.md",
     "05_技术环境/国产单机版安装.md",
@@ -221,7 +225,6 @@
     "05_技术环境/Unconfirmed 946655.crdownload",
     "99_临时整理/templates/未命名.md",
     "99_临时整理/templates",
-    "数据库.base",
     "00_首页导航/首页导航.md",
     "07_项目案例/恩阳纪委单机版安装.md",
     "未命名.canvas",
