@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7a0cb134dfc73e0d",
+        "id": "cb91987e12244bb5",
         "type": "tabs",
         "children": [
           {
-            "id": "4a3d5b8c8352109a",
+            "id": "bd5e91e4ace06783",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "05_技术环境/常用命令.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "常用命令"
+              "title": "新标签页"
             }
           }
         ]
@@ -201,14 +197,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4a3d5b8c8352109a",
+  "active": "70cc938bc0fcd2fa",
   "lastOpenFiles": [
-    "数据库.base",
+    "07_项目案例/天石科技.md",
+    "07_项目案例/肃北.md",
+    "07_项目案例/恩阳纪委单机版安装.md",
+    "06_问题排查库/档案系统常见问题.md",
     "05_技术环境/常用命令.md",
-    "03_档案系统知识/系统使用.md",
-    "05_技术环境/Linux安装/Linux安装.md",
-    "未命名.md",
     "05_技术环境/国产单机版安装.md",
+    "05_技术环境/Linux安装/Linux安装.md",
+    "数据库.base",
+    "03_档案系统知识/系统使用.md",
+    "未命名.md",
     "05_技术环境/Unconfirmed 284905.crdownload",
     "05_技术环境/单机版安装.md",
     "05_技术环境/Linux安装/图片和附件/image.png",
@@ -226,7 +226,6 @@
     "99_临时整理/templates/未命名.md",
     "99_临时整理/templates",
     "00_首页导航/首页导航.md",
-    "07_项目案例/恩阳纪委单机版安装.md",
     "未命名.canvas",
     "2026-08-04.md",
     "05_技术环境.md",
