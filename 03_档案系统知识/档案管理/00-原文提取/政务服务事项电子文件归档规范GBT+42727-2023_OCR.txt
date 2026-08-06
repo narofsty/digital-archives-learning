@@ -1,0 +1,2344 @@
+﻿===== 第 1 页 =====
+ICS01.140.20
+GB
+CCS A 14
+中华人民共和国国家标准
+GB/T 42727-2023
+政务服务事项电子文件归档规范
+Archiving specification for electronic documents of government service item
+2023-05-23 发布
+2023-12-01 实施
+国家市场监督管理总局
+发布
+国家标准化管理委员会
+
+===== 第 2 页 =====
+GB/T 42727-2023
+目
+次
+Ⅲ
+引言…………………………………………………………………………………………………………
+1范围………………………………………………………………………………………………………1
+2规范性引用文件……………………………………………………………………………………………………………1
+3术语和定义…………………………………………………………………………………………………1
+4总体原则和要求……………………………………………………………………………
+2
+5归档功能要求………………………………………………3
+3
+5.2 归档配置功能
+…………………………………………………………………………………
+3
+5.3 整理组件功能
+……………………………………………………………………………………………………3
+5.4
+清点检测功能
+5.5
+归档信息包封装功能
+……………………………………………………………4
+5.6数据交换功能
+………………4
+5.7统计和审计功能……………………………………………………………………………………4
+6归档流程………………………………………………4
+6.1 总体流程
+6.2文件收集………………………………………………………………………………………5
+5
+6.4清点…………………………………………………………………………………………………6
+6.5 形成归档信息包……………………………………………………6
+6
+6.7 归档检测
+…………………………………………………………………………………………………6
+6.8 数据交换
+6.9 接收检测
+6.10登记编目………………………………………………………………………………………………………6
+6.11入库…………………………………………………………………………………………………
+6
+7归档信息包的内容、结构和命名规则……………………………………7
+7.2 结构
+………………………………………………………………………………………………7
+7.3命名规则………………………………………………………………………………………………7
+8元数据要求……………………………………………………………………………………………………
+8
+8.1概述…………………………………………………………………………………………………
+8
+8.2归档配置信息
+………………………………………………………………………………………
+8
+I
+
+===== 第 3 页 =====
+GB/T 42727-2023
+8.3 办件基本信息…………………………………………………………………………12
+8.4办理流程信息……………………………………………………………………………17
+存储格式要求…………………………………………………………………………………………………18
+9.1般要求………………………………………………………………………………………………18
+9.2 具体要求…
+10 数据交换要求…
+………………………………………………………………………………………18
+附录 A（资料性）
+[7 ………………………………………………………目目
+附录B（资料性）
+7…………………………………………………………………買昌曰
+附录C（资料性）
+归档信息包的嵌套结构示例…………………28
+附录 D（资料性）
+政务服务事项电子文件元数据映射表………………………29
+附录E（资料性）
+元数据描述格式示例……………………………………32
+参考文献…
+Ⅱ
+
+===== 第 4 页 =====
+GB/T 42727—2023
+前言
+本文件按照GB/T1.1—2020《标准化工作导则 第1部分:标准化文件的结构和起草规则》的规定
+起草。
+请注意本文件的某些内容可能涉及专利。本文件的发布机构不承担识别专利的责任。
+本文件由国家档案局提出并归口。
+本文件起草单位：浙江省档案局、浙江省档案馆、福建南威软件有限公司。
+本文件主要起草人：郑金月、梁绍红、王锦妙、夏振华、陈林、王大众、林伟宏、翁梅、陈桂明、高乐、
+黄文峰。
+Ⅲ
+
+===== 第 5 页 =====
+GB/T 42727-2023
+引
+言
+随着“互联网+政务服务”的深入推进，政务服务实施机构在办理政务服务事项过程中，形成了大量
+的电子文件。这些电子文件是国家信息资源的重要组成部分，具有重要凭证和长久查考价值。制定政
+务服务事项电子文件归档的国家标准，用以指导各级政务服务实施机构开展政务服务事项电子文件归
+档工作，对于规范归档和安全保存政务服务事项电子文件，维护社会各方合法权益具有重要意义。
+IV
+
+===== 第 6 页 =====
+GB/T 42727—2023
+政务服务事项电子文件归档规范
+1 范围
+本文件规定了通过政务服务事项办理系统形成、办理、传输和存储的电子文件(简称政务服务事项
+电子文件)归档的功能要求、归档流程，归档信息包的内容、结构、命名规则，以及元数据、存储格式、数据
+交换等要求。
+本文件适用于在政务服务事项办理系统中形成的依申请办理的行政权力事项和公共服务事项电子
+文件的归档，行政处罚、行政检查等行政权力事项电子文件的归档参照使用。
+2 规范性引用文件
+下列文件中的内容通过文中的规范性引用而构成本文件必不可少的条款。其中，注日期的引用文
+件，仅该日期对应的版本适用于本文件；不注日期的引用文件，其最新版本(包括所有的修改单)适用于
+本文件。
+GB/T18894—2016 电子文件归档与电子档案管理规范
+GB/T 36905—2018 电子证照 文件技术要求
+GB/T 39554.1—2020 全国一体化政务服务平台 政务服务事项基本目录及实施清单 第1部
+分：编码要求
+DA/T 13 档号编制规则
+3 术语和定义
+下列术语和定义适用于本文件。
+3.1
+政务服务事项 government service item
+政府部门及其授权或委托的其他组织行使依申请办理的行政权力和公共服务事项过程中提供的服
+务事项。
+[来源：GB/T 39554.1—2020,3.3]
+3.2
+政务服务事项办理系统
+government service system
+用于办理政务服务事项(3.1)的信息系统。
+3.3
+电子文件 electronic document
+国家机构、社会组织或个人在履行其法定职责或处理事务过程中，通过计算机等电子设备形成、办
+理、传输和存储的数字格式的各种信息记录。电子文件由内容、结构、背景组成。
+[来源：GB/T 18894—2016,3.1]
+3.4
+电子档案 electronic records
+具有凭证、查考和保存价值并归档保存的电子文件(3.3)。
+1
+
+===== 第 7 页 =====
+GB/T 42727—2023
+[来源：GB/T 18894—2016,3.2]
+3.5
+办件finished item
+政务服务事项(3.1)按程序办理完毕并形成相应结果的单个活动，是政务服务事项办理和归档的基
+本单位。
+3.6
+元数据 metadata
+描述电子文件和电子档案的内容、背景、结构及其管理过程的数据。
+[来源：GB/T 18894—2016,3.3]
+3.7
+归档 archiving
+将具有保存价值且办理完毕的政务服务事项电子文件及相关信息经收集、整理并向档案部门移交
+的过程。
+[来源：GB/T39362—2020,3.3，有修改]
+3.8
+容缺归档 tolerance archiving
+一个办件的某些归档材料在办理过程中未进入政务服务事项办理系统，在该办件电子文件归档时
+以不完整状态进行归档并标记的方式。
+3.9
+组件 component
+构成电子文件、电子档案且独立存在的一个比特流。
+[来源：GB/T 18894—2016,3.4]
+3.10
+信息包information package
+由内容信息、流程信息和相关保存描述信息构成的信息整体。
+[来源：DA/T58—2014,2.8，有修改]
+3.11
+归档信息包 archiving submission information package
+政务服务实施机构在归档时按照档案管理要求对政务服务事项电子文件及相关信息进行组织并提
+交的信息包。
+[来源：GB/T 39362—2020,3.10，有修改]
+3.12
+封装 encapsulation
+将政务服务事项电子文件及元数据作为一个整体按指定结构打包的过程。
+[来源：DA/T 58—2014,3.12，有修改]
+3.13
+电子文件号electronic document code
+政务服务事项电子文件归档过程中，系统根据一定的规则赋予归档政务服务事项电子文件信息整
+体的唯一编号。
+4 总体原则和要求
+4.1 政务服务事项电子文件归档工作应按照在线政务服务有关规定和电子档案管理的要求开展，确保
+2
+
+===== 第 8 页 =====
+GB/T 42727—2023
+归档的政务服务事项电子文件符合来源可靠、程序规范、要素合规的要求。
+4.2 政务服务实施机构应建立严格的政务服务事项电子文件归档和电子档案管理制度，明确政务服务
+事项电子文件归档和电子档案管理工作的职责和分工，主要包括以下三类部门的职责和分工：
+a）业务办理部门负责做好政务服务事项电子文件的收集、整理、移交归档工作；
+b）档案部门负责制定政务服务事项电子文件归档范围和档案保管期限表，提出政务服务事项办
+理系统和电子档案管理系统的电子文件归档功能要求，做好政务服务事项电子档案的接收、保
+管、利用工作；
+c）信息化部门负责依据标准建设政务服务事项办理系统电子文件归档功能，参与电子档案管理
+系统建设，为电子档案管理提供信息化支持。
+涉及多个政务服务实施机构联合办理的政务服务事项，各政务服务实施机构按照各自职责分工做
+好归档工作。
+对于区域统一建设的一体化在线政务服务平台，档案主管部门和政务服务管理机构应按照各自职
+责分工，落实国家有关政务服务事项电子文件归档和电子档案管理要求，为实现政务服务事项全流程、
+规范化网上办理和归档提供政策指引和技术支持。
+4.3 政务服务事项电子文件的归档宜采用在线归档方式，归档时间最迟不应超过政务服务事项办结后
+的第2年6月。政务服务事项办理系统如有重大调整，宜在完成系统内政务服务事项电子文件的归档
+工作后实施。
+4.4 政务服务事项电子文件的归档范围与保管期限参照相应纸质文件的归档范围与保管期限执行，归
+档范围与保管期限的相关信息见《机关文件材料归档范围和文书档案保管期限规定》和《企业文件材料
+归档范围和档案保管期限规定》。
+用以证明政务服务事项办理全过程，满足司法审查等需要的证据性材料、程序性材料、结果性材料
+应纳入归档范围。
+保管期限应不低于行政管理、诉讼、审计等活动所需的追溯年限。
+4.5 政务服务事项办理系统应按照国家网络安全等级保护标准建设，采用符合国家信息技术安全要求
+的电子认证、密码应用等可靠技术保障措施，确保信息安全。
+5 归档功能要求
+5.1 基本要求
+政务服务事项电子文件归档功能设计应符合GB/T18894—2016中5.1的基本规定，归档功能模
+块宜作为政务服务事项办理系统的一个内置功能模块，也可采用独立系统等不同的方式，实现与政务服
+务事项办理系统、电子档案管理系统的对接。
+5.2归档配置功能
+应能按文件材料归档范围和档案保管期限表，配置需归档的政务服务事项，并支持以政务服务事项
+的最小细分项(如子项、业务项等)为单位配置归档材料目录，同时支持对电子文件号命名规则、密级等
+参数的灵活配置。支持对归档配置的版本管理。
+可根据工作需要，支持对政务服务事项电子文件归档范围和档案保管期限进行在线审查。
+5.3整理组件功能
+应能根据相应版本的归档配置自动对政务服务事项电子文件组件及元数据进行收集和整理，支持
+以人工方式进行必要的信息补录和材料补充；应能对特殊原因无法补充的应归档材料进行容缺标记并
+备注说明具体原因。
+3
+
+===== 第 9 页 =====
+GB/T 42727—2023
+5.4 清点检测功能
+应能在形成归档信息包前，根据相应版本的归档配置对归档政务服务事项电子文件的完整性、规范
+性等进行必要的清点和技术检测，标记清点检测结果。
+应能对归档信息包的真实性、完整性、可用性、安全性进行技术检测和验证。
+5.5归档信息包封装功能
+应能根据归档信息包结构要求，将政务服务事项电子文件组件、整理输出的元数据XML文件封装
+为一个归档信息包，并可支持通过可信时间戳、数字摘要等技术手段确保其真实性、安全性。
+5.6 数据交换功能
+应支持将归档信息包逐个或批量交换到电子档案管理系统，按照第10章的要求形成数据交换目
+录，保证数据交换前后的一致性。
+5.7 统计和审计功能
+5.7.1 应支持对归档过程中的政务服务事项电子文件和电子档案按需求进行分类统计，对归档配置及
+归档情况进行检查。
+5.7.2应支持对归档过程中的所有操作及操作人员、时间和结果等日志信息进行记录和跟踪、审计。
+6 归档流程
+6.1 总体流程
+归档流程分两个阶段：
+a）预归档阶段：政务服务实施机构业务办理部门对政务服务事项电子文件组件及元数据进行收
+集、整理和清点，形成完整的归档信息包，经检测合格后移交归档；
+b）正式归档阶段：政务服务实施机构档案部门对接收到的归档信息包进行接收检测、登记编
+目，形成政务服务事项电子档案。
+政务服务实施机构业务办理部门对已归档的政务服务事项电子文件需要变更或补正电子文件组件
+及元数据时，应采用嵌套结构形成新的归档信息包，并按上述流程再次归档，替代原归档信息包。
+具体流程见图1。
+4
+
+===== 第 10 页 =====
+GB/T42727-2023
+业务部门
+档案部门
+(预归档阶段)
+(正式归档阶段)
+开始
+结束
+文件收集
+入库
+A
+不合格
+补充材料
+垂
+登记编目
+是
+合格
+不合格
+补充材料
+是否可以
+清点
+不合格
+接收检测
+否
+合格
+数据交换
+标记容缺归档
+形成归档信息包
+生成验证信息
+A
+不合格
+归档检测
+合格
+图1 政务服务事项电子文件归档流程
+6.2 文件收集
+政务服务事项办结后，系统根据预先设置的归档范围和归档材料目录，自动采集办理过程中形成的
+政务服务事项电子文件组件及元数据，一般实时进行，必要时可人工补充，并符合以下规定：
+a）以数据共享形式从外部调用的电子证照及其元数据应一并采集；
+b）采集的电子文件组件存储格式符合第9章的规定；
+c）采集的元数据符合第8章的规定。
+6.3 整理
+以办件为单位将采集的政务服务事项电子文件组件及元数据按第7章的规定进行整理，以文件夹
+的形式进行规范组织和存储，形成归档文件夹，并按预先设置的命名规则生成电子文件号，对归档文件
+夹进行命名。
+5
+
+===== 第 11 页 =====
+GB/T 42727—2023
+6.4 清点
+对归档文件夹中的政务服务事项电子文件组件及元数据进行自动清点。归档的政务服务事项电子
+文件门类、保管期限、件数应与归档信息包中的归档材料信息相匹配，元数据符合第8章的规定。经清
+点，政务服务事项电子文件组件及元数据有缺失的应予以补充并重新整理；因特殊原因无法补充则在归
+档材料信息中记录原因后容缺归档。
+6.5 形成归档信息包
+将清点合格的政务服务事项电子文件组件及元数据以归档文件夹为单位进行封装，形成归档信
+息包。
+6.6 生成验证信息
+对归档信息包可通过可信时间戳、数字摘要等技术手段生成验证信息，确保其可追溯。生成的验证
+信息单独保存，并与归档信息包建立关联。
+6.7 归档检测
+在提交归档前，宜参考DA/T70的相关检测要求，通过专业检测工具或系统集成的检测功能，对归
+档信息包进行真实性、完整性、可用性、安全性等技术检测和验证，记录检测时间、结果，不符合要求的归
+档信息包应重新整理。
+6.8 数据交换
+将归档信息包从政务服务事项办理系统交换到电子档案管理系统，并按第10章的规定生成政务服
+务事项电子文件数据交换目录作为系统间交换凭据。
+6.9 接收检测
+在登记编目前，档案部门宜参考DA/T70的相关检测要求，对归档信息包的真实性、完整性、可用
+性和安全性进行检测，对于不符合要求的归档信息包予以退回，并注明退回原因。
+6.10登记编目
+将归档信息包按GB/T18894—2016的要求导入电子档案管理系统预归档库进行登记，并自动编
+制档号，生成归档目录和归档登记表：
+a）按DA/T13的档号编制规则，根据需要生成由全宗号、档案门类代码、机构(问题)代码等要素
+组成的档号；
+b）对归档信息包中的基本信息元数据进行解析，自动生成归档目录；
+c）根据需要，可人工进行排序调整、元数据补充或归档阶段元数据调整等操作，但不应修改政务
+服务事项电子文件组件和办理阶段元数据的原始内容。
+6.11 入库
+将政务服务事项电子档案导入电子档案管理系统正式库，由政务服务实施机构档案部门进行
+管理。
+6
+
+===== 第 12 页 =====
+GB/T 42727—2023
+7 归档信息包的内容、结构和命名规则
+7.1 内容
+7.1.1 政务服务事项电子文件的归档以一个办件为单位形成归档信息包，宜以ZIP格式存储，编码格
+式为“UTF-8”。归档信息包的内容为单个政务服务事项办件办理过程中形成的电子文件组件及元
+数据。
+7.1.2 政务服务事项电子文件的元数据分为归档配置信息、办件基本信息和办理流程信息三类。政务
+服务事项电子文件归档内容见表1。
+表1 政务服务事项电子文件归档内容
+归档内容
+说明
+此次归档办件对应政务服务事项预先配置的归档材料目录、容缺归档情况、实际
+归档配置信息
+采集归档的政务服务事项电子文件组件等信息
+元数据
+办件基本信息
+此次归档办件的行政相对人、办理部门、办理事项、结果等信息
+办理流程信息
+此次归档办件办理的环节、人员、意见等流程信息
+此次归档办件形成和获取的表、证、单、书等文本、数据及图像、音频、视频等多媒
+电子文件组件
+体文件，按归档材料目录分别存放
+7.1.3 归档内容元数据要求应符合第8章的规定，文件存储格式应符合第9章的规定。
+7.2 结构
+7.2.1 一般结构
+7.2.1.1归档信息包的一般结构在逻辑上是一个以电子文件号命名的归档文件夹，归档文件夹内存放
+归档的政务服务事项电子文件组件及元数据。
+7.2.1.2 政务服务事项电子文件组件按照预先设置的归档材料目录进行整理和排列，并存放在以归档
+材料目录序号和名称命名的文件夹中。归档材料目录及排序见附录A，归档信息包的一般结构见附
+录B。
+7.2.2 嵌套结构
+7.2.2.1 对于已归档的政务服务事项电子文件，在变更或补正电子文件组件及元数据时采用嵌套结构
+形成新的归档信息包。
+7.2.2.2 嵌套结构的组织存放方式与一般结构一致，在归档文件夹内存放原始的归档信息包、补正后的
+政务服务事项电子文件组件及元数据。补正后的政务服务事项电子文件组件及元数据参照一般结构进
+行分类和排列。内容结构示例见附录C。
+7.3 命名规则
+7.3.1 基本规则
+政务服务事项电子文件归档过程中形成的归档信息包以电子文件号命名。电子文件号实行统一编
+号规则，推荐采用：政务服务事项业务办理项编码-年度-保管期限-归档流水号，命名规则如图2所示。
+7
+
+===== 第 13 页 =====
+GB/T 42727—2023
+××××××—××××—××××—××××××××
+-8位归档流水号
+保管期限（一般不超过4位）
+4位办结年度
+-33位业务办理项编码
+图 2 电子文件号结构
+7.3.2 业务办理项编码
+由18位统一社会信用代码、1位行使层级代码、12位基本目录编码和2位业务项代码组成，结构见
+图 3。具体见 GB/T 39554.1—2020。
+×××××××××××××××××× × ×× ×× ××××× ××× ××
+2位业务项代码
+3位子项代码
+5位主项代码
+-12位基本目录编码
+-2位事项类型代码
+2位行政区划代码
+-1位行使层级代码
+-18位统一社会信用代码
+图 3 业务办理项编码结构
+7.3.3 年度
+年度共4位，以数字字符表示，表示该办件的办结年度。
+7.3.4 保管期限
+保管期限分为定期和永久。定期以字母“D”和保管时限表示，如定期30年表示为“D30”，永久以字
+母“Y”表示。
+7.3.5 归档流水号
+归档流水号宜以8位阿拉伯数字表示，为该办件的归档流水号。每年从00000001开始按照同一事
+项业务办理项编码下的归档信息包生成顺序编码。
+8 元数据要求
+8.1 概述
+本章规定了描述政务服务事项电子文件的元数据集合。实际工作中可根据具体情况参考
+GB/T 39046—2020、GB/T 39554.1—2020、GB/T39554.2—2020、DA/T 46—2009扩充元数据集合，具
+体元数据对应关系见附录D。
+8.2 归档配置信息
+归档配置信息以XML格式文档保存，描述此次归档办件对应政务服务事项设定的归档材料目录、
+8
+
+===== 第 14 页 =====
+GB/T 42727—2023
+容缺归档情况和实际采集归档的政务服务事项电子文件组件等信息，用于归档政务服务事项电子文件
+组件的清点和归档信息包的完整性检测，命名为“归档配置信息.XML”，编码格式为“UTF-8”，其元数
+据描述符合表2的要求。其格式示范见附录E。
+表 2 归档配置信息的元数据描述
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+A1
+事项类型
+TaskType
+必选不可重复简单型
+字符型办理阶段政务服务事项类型
+A2
+事项实施编码
+TaskCode
+必选不可重复简单型
+字符型办理阶段政务服务事项的实施编码
+应符 合 GB/T 39554.1—
+A3
+业务办理项编码
+BusinessCode
+必选不可重复简单型
+字符型
+办理阶段
+2020中第6章的要求
+BusinessExtended-
+应符 合 GB/T 39554.1—
+A4
+业务办理项扩展码
+可选不可重复简单型
+字符型
+办理阶段
+Code
+2020中第7章的要求
+A5
+事项名称
+TaskName
+必选不可重复简单型
+字符型
+办理阶段
+政务服务事项的名称
+政务服务事项实施主体的
+A6
+实施主体编码
+DepartmentCode
+必选不可重复简单型
+字符型办理阶段
+统一社会信用代码
+政务服务事项实施主体
+A7
+实施主体名称
+DepartmentName
+必选不可重复简单型字符型办理阶段
+名称
+政务服务事项办理时的事
+A8
+事项版本
+TaskVersion
+必选不可重复简单型字符型办理阶段
+项版本编号
+归档配置中设定的政务服
+A9
+保管期限
+RetentionPeriod
+必选不可重复简单型
+字符型
+归档阶段
+务事项保管期限
+包括容缺归档标记和容缺
+A10
+容缺归档
+MissingArchive
+可选不可重复容器型
+归档阶段
+归档原因
+A11
+容缺归档标记
+MissingFlag
+必选不可重复简单型
+字符型
+归档阶段对容缺归档的特别标记
+A12
+容缺归档原因
+MissingReason
+必选
+不可重复
+简单型
+字符型
+归档阶段
+容缺归档的原因说明
+A13
+归档范围
+FilingRanges
+必选
+不可重复
+容器型
+归档阶段
+归档配置的归档范围
+包括归档材料目录名称和
+A14
+归档材料目录
+MaterialCatalog
+必选
+可重复
+容器型
+归档阶段
+归档配置辅助信息
+归档配置的应归档材料目
+归档材料目录MaterialCatalo-
+A15
+必选不可重复简单型字符型归档阶段
+录的序号和名称或具体材
+名称
+gName
+料名称
+归档配置的归档材料的必
+归档配置辅助
+A16
+Auxiliary
+可选
+可重复
+简单型
+字符型归档阶段
+要性、载体形式等辅助
+信息
+信息
+归档材料容缺
+归档配置的归档材料的容
+A17
+MissingMaterialFlag可选不可重复简单型字符型归档阶段
+归档标记
+缺性标记
+9
+
+===== 第 15 页 =====
+GB/T 42727—2023
+表2 归档配置信息的元数据描述（续）
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+实际采集归档的政务服务
+A18
+办件归档组件
+ArchiveFiles
+必选不可重复容器型
+归档阶段事项电子文件组件的信息
+集合
+实际采集归档的政务服务
+A19
+归档文件目录
+FileDirectory
+必选
+可重复
+容器型
+归档阶段
+事项电子文件组件的文件
+目录集合
+实际采集归档的政务服务
+事项电子文件组件所属归
+A20
+文件目录名称
+FileDirectoryName
+必选不可重复简单型字符型归档阶段
+档材料目录名称或具体材
+料名称，应与A15一致
+ArchiveFileInforma-
+单个政务服务事项电子文
+A21
+归档文件信息
+必选
+可重复
+容器型
+归档阶段
+tion
+件组件信息的集合
+政务服务事项电子文件组
+A22
+格式信息
+FormatInformation
+必选
+不可重复简单型
+字符型归档阶段
+件的存储格式信息
+计算机文
+政务服务事项电子文件组
+A23
+ComputerFileName
+必选不可重复
+简单型
+字符型归档阶段
+件名
+件的计算机文件名称
+计算机文件
+政务服务事项电子文件组
+A24
+ComputerFileSize
+必选不可重复简单型
+字符型归档阶段
+大小
+件的计算机文件大小
+计算机文件ComputerFileCre-
+日期时
+政务服务事项电子文件组
+A25
+必选不可重复简单型
+归档阶段
+形成时间
+ationTime
+间型
+件的计算机文件创建时间
+政务服务事项电子文件组
+计算机文件ComputerFileStor-
+A26
+必选不可重复简单型字符型归档阶段件的计算机文件在归档包
+存储路径
+agePath
+内的相对存储路径
+归档配置信息元数据的 Schema定义如下。
+< ssnn =sn :mn>
+<xs:complexType>
+<xs:sequence>
+<s.s:m =nt  =s :m/
+<xs:element name="TaskCode" type="xs:string"/>
+<xs:element name="BusinessExtendedCode" type="xs:string" minOccurs="0"/>
+<xs:element name="TaskName" type="xs:string"/>
+<xs:element name="DepartmentCode" type="xs:string"/>
+≤xs: element name="DepartmentName" type="xs:string"/>
+<xs:element name="TaskVersion" type="xs:string"/>
+10
+
+===== 第 16 页 =====
+GB/T 42727—2023
+<xs:element name= "RetentionPeriod" type="xs:string"/>
+<xs:element name= "MissingArchive" minOccurs= "0">
+<xs:complexType>
+<xs:sequence>
+<xs:sequence>
+≤xs: element name= "MissingFlag" type= "xs: string"/>
+<xs: element name= "MissingReason" type="xs: string"/>
+</xs:sequence>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+≤xs: element name= "FilingRanges">
+<xs:complexType>
+<xs:sequence>
+<xs:element name= "MaterialCatalog" maxOccurs="unbounded" type= "Material-
+Catalog"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+≤xs:element name="ArchiveFiles">
+<xs:complexType>
+<xs:sequence>
+<xs:element name= "FileDirectory" maxOccurs= "unbounded" type= "FileDirecto-
+ry"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<！--归档材料目录预定义 -->
+<xs: complexType name= "MaterialCatalog">
+<xs:sequence>
+<xs: element name= "MaterialCatalogName" type= "xs:string"/>
+<xs: choice>
+<xs: element name = "MaterialCatalog" maxOccurs = " unbounded" type = "MaterialCata-
+log"/>
+<xs: group ref= "MaterialCatalogAuxiliary"/>
+</xs:choice>
+</xs:sequence>
+</xs:complexType>
+11
+
+===== 第 17 页 =====
+GB/T 42727—2023
+<！——归档材料目录具体材料的归档属性，包括辅助信息和容缺信息——>
+<xs: group name= "MaterialCatalogAuxiliary">
+<xs:sequence>
+: sx  =   n  = ms    = ms  u  =   : ux 
+string"/>
+<xs: element name = "MissingMaterialFlag" minOccurs = "0" maxOccurs = "1" type = " xs:
+string"/>
+</xs:sequence>
+</xs:group>
+<！-—实际采集归档的文件目录定义-->
+<xs: complexType name= "FileDirectory">
+<xs: sequence>
+<i:m =  = :m/
+<xs:choice>
+<xs: element name="FileDirectory" maxOccurs="unbounded" type="FileDirectory"/>
+<xs:element name="ArchiveFileInformation" maxOccurs="unbounded">
+<xs:complexType>
+<xs:all>
+<xs: element name="ComputerFileName" type= "xs:string"/>
+<xs:element name="FormatInformation" type="xs:string"/>
+<xs:element name="ComputerFileSize" type="xs:string"/>
+<xs:element name="ComputerFileCreationTime" type="xs:dateTime"/>
+<xs:element name="ComputerFileStoragePath" type="xs:string"/>
+</xs:all>
+</xs:complexType>
+</xs:element>
+</xs:choice>
+</xs:sequence>
+</xs:complexType>
+8.3 办件基本信息
+办件基本信息以XML格式文档保存，描述此次归档办件的基本信息，命名为“办件基本信息.XML”，编
+码格式为“UTF-8”，其元数据描述符合表3的要求，其中办理阶段形成的元数据根据业务系统实际形成
+的元数据可进行扩展。其格式示范见附录E。本文件只规定描述政务服务事项电子文件归档的最基本
+元数据集合，政务服务事项办理完整的元数据集合以及元数据元素的描述可参考GB/T19488.2
+2008、GB/T 39046—2020、GB/T 39554.1—2020 和 GB/T 39554.2—2020。
+12
+
+===== 第 18 页 =====
+GB/T 42727—2023
+表 3 办件基本信息的元数据描述
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+根据规则生成的电子文
+B1
+电子文件号
+DocumentNumber
+必选不可重复简单型
+字符型
+归档阶段
+件号
+归档办件的实际保管期
+B2
+保管期限
+RetentionPeriod
+必选不可重复简单型字符型归档阶段
+限，默认继承归档配置的
+政务服务事项保管期限
+SecurityClassifica-
+具体办件或政务服务事项
+B3
+密级
+必选不可重复简单型
+字符型办理阶段
+tion
+保密程度的等级
+具体办件或政务服务事项
+B4
+保密期限
+SecrecyPeriod
+必选不可重复简单型字符型办理阶段
+的密级时间期限
+政务服务事项办理系统中
+日期
+B5
+归档时间
+ArchiveTime
+必选不可重复简单型
+归档阶段政务服务事项办理部门启
+时间型
+动归档的时间
+政务服务事项业务发生所
+B6
+行政区划编码
+AreaCode
+必选不可重复简单型
+字符型办理阶段
+在行政区划编码
+政务服务事项实施主体的
+B7
+实施主体编码
+DepartmentCode
+必选不可重复简单型
+字符型办理阶段
+统一社会信用代码
+政务服务事项实施主体
+B8
+实施主体名称
+DepartmentName
+必选不可重复简单型
+字符型
+归档阶段
+名称
+政务服务事项办理处(科)
+B9
+责任处(科)室
+LeadDepartment
+可选不可重复简单型字符型办理阶段
+室的名称
+ApplicantInforma-
+包含所有行政相对人信息
+B10
+申请者信息
+必选
+可重复
+容器型
+办理阶段
+tion
+的集合
+包括单个申请者信息的
+B11
+申请者
+Applyer
+必选
+可重复
+容器型
+办理阶段
+集合
+行政相对人的姓名或机构
+B12
+申请者名称
+ApplyerName
+必选不可重复简单型
+字符型办理阶段
+名称
+申请者手机
+行政相对人或法人的手机
+B13
+ApplyerMobile
+必选不可重复简单型
+字符型办理阶段
+号码
+号码
+申请者通讯
+B14
+ApplyerAddress
+可选不可重复简单型字符型办理阶段
+行政相对人或机构的地址
+地址
+行政相对人或机构的证件类
+申请者证件类
+B15
+ApplyerCardType
+必选不可重复简单型字符型办理阶段
+型代码，参考GA/T 2000.156
+型代码
+中证件类型代码
+申请者证件
+行政相对人或机构的证件
+B16
+ApplyerCardCode
+必选不可重复简单型字符型办理阶段
+号码
+号码
+13
+
+===== 第 19 页 =====
+GB/T 42727—2023
+表3办件基本信息的元数据描述（续）
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+B17
+联系人/代理人姓名
+ContactName
+可选
+不可重性简单型
+字符型办理阶段联系人或代理人姓名
+联系人或代理人证件类型
+联系人/代理人证件
+B18
+ContactType
+可选
+不可重性
+简单型
+字符型办理阶段
+代码，参考 GA/T 2000.156
+类型代码
+中证件类型代码
+联系人/代理人证件
+B19
+ContactCode
+可选
+不可重性
+简单型
+字符型办理阶段联系人或代理人证件号码
+号码
+B20
+联系人手机号码
+ContactMobile
+可选
+不可重性
+简单型
+字符型
+办理阶段联系人手机号码
+行政相对人的法定代表人
+B21
+法定代表人
+LegalMan
+可选
+可重复
+简单型
+字符型办理阶段
+姓名
+日期
+行政相对人或代理人申请
+B22
+申请时间
+ApplyTime
+可选
+不可重性简单型
+办理阶段
+时间型
+办理政务服务事项的时间
+政务服务事项办理系统中
+B23
+办件名称
+ProjectName
+必选不可重复简单型字符型办理阶段政务服务事项单个办件的
+名称
+政务服务事项办理系统中
+B24
+受理单位名称
+ReceiveDepartment
+必选不可重复简单型
+字符型办理阶段政务服务事项受理单位的
+名称
+日期
+B25
+受理时间
+ReceiveTime
+必选不可重复简单型
+办理阶段政务服务事项受理的时间
+时间型
+日期
+B26
+办结时间
+TransactTime
+必选不可重复简单型
+办理阶段政务服务事项办结的时间
+时间型
+政务服务事项办理系统中
+B27
+办件编号
+ProjectId
+必选不可重复简单型
+字符型办理阶段按规则自动生成的办件唯
+一标识
+政务服务事项单个办件的
+B28
+办件类型
+ServiceType
+可选
+不可重复简单型
+字符型办理阶段
+类型
+B29
+办理结果
+Result
+必选
+不可重复简单型
+字符型
+办理阶段政务服务事项办理的结果
+结果证照名称可填入多个
+B30
+结果证照名称
+ResultCertName
+可选不可重复简单型字符型办理阶段
+结果证照名称，用符号“”
+隔开
+结果证照编号可多个组
+B31
+结果证照编号
+ResultCertNo
+可选
+不可重复简单型
+字符型办理阶段
+合，用符号“”隔开
+结果证照有效期ResultCertBegin-
+政务服务事项办理结果的
+B32
+可选
+不可重复简单型
+字符型办理阶段
+限始
+Date
+证件有效期限
+14
+
+===== 第 20 页 =====
+GB/T 42727—2023
+表3 办件基本信息的元数据描述（续）
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+结果证照有效期
+政务服务事项办理结果的
+B33
+ResultCertEndDate
+可选不可重复简单型字符型办理阶段
+限止
+证件有效期限
+B34
+事项实施编码
+TaskCode
+必选不可重复简单型字符型
+办理阶段政务服务事项的实施编码
+应符 合 GB/T 39554.1—
+B35
+业务办理项编码
+BusinessCode
+必选不可重复简单型字符型办理阶段
+2020中第6章的要求
+BusinessExtended-
+应符合 GB/T 39554.1—
+B36
+业务办理项扩展码
+可选不可重复简单型字符型办理阶段
+Code
+2020中第7章的要求
+政务服务事项办理时的事
+B37
+事项版本
+TaskVersion
+必选不可重复简单型字符型办理阶段
+项版本编号
+B38
+事项类型
+TaskType
+必选不可重复简单型字符型
+办理阶段政务服务事项的类型
+InformationSystem-
+形成政务服务事项电子文
+B39
+信息系统描述
+可选不可重复简单型字符型办理阶段
+Description
+件的信息系统名称
+包括业务办理阶段扩展的
+B40
+扩展项
+Extensions
+可选
+可重复
+容器型
+办理阶段
+元数据项
+办件基本信息元数据的 Schema定义如下。
+<xs:element name="description">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="DocumentNumber" type="xs:string"/>
+<xs:element name="RetentionPeriod" type="xs:string"/>
+≤xs:element name="SecurityClassification" type="xs:string"/>
+<xs:element name="SecrecyPeriod" type="xs:string"/>
+≤xs:element name="ArchiveTime" type= "xs:dateTime"/>
+<xs:element name="AreaCode" type="xs:string"/>
+<xs:element name= "DepartmentCode" type="xs:string"/>
+<xs:element name="DepartmentName" type="xs:string"/>
+<xs:element name="LeadDepartment" type="xs:string" minOccurs= "0"/>
+<xs:element name="ApplicantInformation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Applyer" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ApplyerName" type="xs:string"/>
+<xs:element name="ApplyerMobile" type="xs:string"/>
+15
+
+===== 第 21 页 =====
+GB/T 42727—2023
+<xs: element name= "ApplyerAddress" type="xs: string" minOccurs="0"/>
+</ss:m =p  = :/
+<xs:element name="ApplyerCardCode" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="ContactName" type="xs:string" minOccurs="0"/>
+<xs:element name="ContactType" type="xs:string" minOccurs="0"/>
+<xs:element name="ContactCode" type= "xs:string" minOccurs="0"/>
+<xs:element name="ContactMobile" type="xs:string" minOccurs="0"/>
+<xs:element name="LegalMan" type="xs:string" minOccurs="0"/>
+<xs:element name="ApplyTime" type="xs:dateTime" minOccurs="0"/>
+≤xs:element name="ProjectName" type="xs:string"/>
+<xs:element name="ReceiveDepartment" type="xs:string"/>
+<xs:element name="ReceiveTime" type="xs:dateTime"/>
+<s:m = =s :m/
+<xs:element name="ProjectId" type="xs:string"/>
+<xs:element name="ServiceType" type="xs:string" minOccurs="0"/>
+<xs:element name="Result" type="xs:string"/>
+<xs:element name="ResultCertName" type= "xs:string" minOccurs="0"/>
+<xs:element name="ResultCertNo" type="xs:string" minOccurs="0"/>
+<xs:element name="ResultCertBeginDate" type="xs:string" minOccurs="0"/>
+<xs:element name="ResultCertEndDate" type="xs:string" minOccurs="0"/>
+<xs:element name="TaskCode" type= "xs:string"/>
+<:me = n = :m/
+<xs:element name="BusinessExtendedCode" type= "xs:string" minOccurs= "0"/>
+<xs:element name="TaskVersion" type="xs:string"/>
+<ss:mx, =,  = :m/
+≤xs:element name= "InformationSystemDescription" type="xs: string" minOccurs="0"/>
+<xs: element name="Extensions" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs: any minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+16
+
+===== 第 22 页 =====
+GB/T 42727—2023
+8.4 办理流程信息
+办理流程信息以XML格式文档保存，描述此次归档办件的办理流程信息，命名为“办理流程信
+息.XML”，编码格式为“UTF-8”，其元数据描述符合表4的要求。其格式示范见附录E。
+表 4 办理流程信息的元数据描述
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+C1
+办理流程
+Process
+必选
+可重复
+容器型
+办理阶段
+一个办理环节的信息组合
+政务服务事项办理环节的
+C2
+环节名称
+NodeName
+必选不可重复简单型字符型办理阶段
+名称
+政务服务事项办理环节所
+C3
+经办部门名称
+DepartmentName
+可选不可重复简单型字符型办理阶段
+对应的部门名称
+政务服务事项办理环节所
+C4
+经办部门编码
+DepartmentCode
+可选不可重复简单型字符型办理阶段对应的部门统一社会信用
+代码
+政务服务事项办理环节的
+C5
+经办人
+Author
+必选不可重复简单型字符型办理阶段
+具体办理人员名称
+政务服务事项办理环节的
+C6
+意见类型
+Type
+可选不可重复简单型字符型办理阶段
+意见类型
+政务服务事项办理环节的
+C7
+意见内容
+Body
+必选不可重复简单型字符型办理阶段
+意见内容
+日期
+政务服务事项办理环节的
+C8
+办理时间
+Modified
+必选不可重复简单型
+办理阶段
+时间型
+办理时间
+办理流程信息元数据的 Schema定义如下。
+<sn =n :nmn
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Process" minOccurs="1" maxOccurs= "unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="NodeName" type="xs:string"/>
+<xs:element name="DepartmentName" type="xs: string" minOccurs= "0"/>
+<xs:element name= "DepartmentCode" type="xs:string" minOccurs= "0"/>
+<xs:element name="Author" type="xs:string"/>
+<xs:element name="Type" type="xs:string" minOccurs="0"/>
+≤xs:element name="Body" type="xs:string"/>
+</:i =d  = :/>
+</xs:sequence>
+17
+
+===== 第 23 页 =====
+GB/T 42727—2023
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+9 存储格式要求
+9.1 一般要求
+9.1.1 政务服务事项电子文件的存储格式以政务服务事项办理系统上形成时原采用符合标准要求的
+格式为准。
+9.1.2 政务服务事项电子文件的存储格式应能在脱离政务服务事项办理系统的情况下正确读取与使用。
+9.2 具体要求
+9.2.1以附件形式获取的政务服务事项电子文件，如文档、音频、视频等，使用符合国家标准或国际标
+准的文件格式保存，应按照GB/T18894—2016执行。
+9.2.2 以数据链接形式存放的政务服务事项电子文件应将其下载并保存。
+9.2.3以关系数据库形式存放，显示时以临时抽取组合方式形成的政务服务事项电子文件，应转换成
+符合规范的OFD、XML等易于读取和显示的格式保存。对于国家部委、有关部门已规定标准文本样式
+的电子文件，在归档时应按照规定的标准样式转换成OFD等格式的版式文件。
+9.2.4 通过数据共享形式在线调用及办结形成的电子证照应按GB/T36905—2018的规定以版式电子
+文件形态归档；在线调用的查证信息应参照电子出证的规范格式要求进行归档。
+9.2.5 难以人工读取和理解的元数据文档，在保存元数据文档的同时，应保存该元数据文档的结构说
+明文档，或以注释等方式在元数据文档内予以说明。
+10数据交换要求
+政务服务事项电子文件在进行批量数据交换过程中，应对同一批次的归档信息包建立XML格式
+的数据交换目录，随同该批次的归档信息包一起传输。数据交换目录以XML格式文档保存，描述当前
+批次归档信息包的总数及各个归档信息包的详细信息，命名为“数据交换目录-(系统标识)-(批次
+号).XML”，编码格式为“UTF-8”，其元数据描述符合表5的要求。其格式示范见附录E。
+表5数据交换目录的元数据描述
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+政务服务事项办理系统的
+1
+系统标识
+SystemCode
+必选
+不可重复简单型
+字符型办理阶段
+名称或编码
+根据规则由政务服务事项
+2
+批次号
+BatchName
+必选不可重复简单型字符型归档阶段办理系统生成的交换批次
+编号
+18
+
+===== 第 24 页 =====
+GB/T 42727—2023
+表5数据交换目录的元数据描述（续）
+约束
+元素
+数据
+序号
+中文名称
+英文名称
+可重复性
+形成阶段
+说明
+性
+类型
+类型
+3
+交换日期
+SendDate
+必选不可重复简单型
+日期型
+归档阶段单个批次交换的日期
+单个批次交换的归档信息
+4
+交换数量
+SendNumber
+必选不可重复简单型
+整型
+归档阶段
+包数量
+DirectoryInforma-
+单个批次交换的归档信息
+5
+交换目录信息
+必选不可重复容器型
+归档阶段
+tion
+包目录
+一个归档信息包的目录信
+归档信息包目录
+6
+Directory
+必选
+可重复
+容器型
+归档阶段息，包含电子文件号、办件
+信息
+名称、归档时间、部门名称
+政务服务事项办理系统上
+7
+电子文件号
+DocumentNumber
+必选不可重复简单型字符型归档阶段根据规则生成的电子文
+件号
+政务服务事项办理系统中
+8
+办件名称
+ProjectName
+必选不可重复简单型字符型办理阶段政务服务事项单个办件的
+名称
+政务服务事项办理系统中
+日期时
+9
+归档时间
+ArchiveTime
+必选不可重复简单型
+归档阶段政务服务事项办理部门启
+间型
+动归档的时间
+政务服务事项实施主体的
+10
+实施主体编码
+DepartmentCode
+必选不可重复简单型字符型办理阶段
+统一社会信用代码
+政务服务事项实施主体
+11
+实施主体名称
+DepartmentName
+必选不可重复简单型字符型办理阶段
+名称
+数据交换目录元数据的 Schema定义如下。
+<ssmm =snt n:mn
+<xs:complexType>
+<xs:sequence>
+<xs:element name="SystemCode" type="xs:string"/>
+<xs:element name="BatchName" type="xs:string"/>
+<xs:element name="SendDate" type="xs:date"/>
+<xs:element name="SendNumber" type= "xs:integer"/>
+<xs:element name="DirectoryInformation">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Directory" maxOccurs="unbounded">
+<xs:complexType>
+<xs:all>
+19
+
+===== 第 25 页 =====
+GB/T42727—2023
+<xs:element name="DocumentNumber" type="xs:string"/>
+<xs:element name="ProjectName" type="xs:string"/>
+<xs:element name="ArchiveTime" type="xs:dateTime"/>
+<xs:element name="DepartmentCode" type="xs:string"/>
+<xs:element name="DepartmentName" type="xs:string"/>
+</xs:all>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+20
+
+===== 第 26 页 =====
+GB/T 42727—2023
+附录A
+(资料性)
+归档材料目录
+表A.1～表A.9分别给出了行政许可事项、行政处罚事项、行政强制事项、行政征收事项、行政给付
+事项、行政检查事项、行政确认事项、行政奖励事项和行政裁决事项的归档材料目录和排列顺序。
+表A.1 行政许可事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政许可决定书
+02
+行政许可申请表
+03
+行政许可申请材料收件凭证
+04
+行政许可材料补正告知书
+05
+行政许可申请材料
+06
+行政许可受理通知书
+07
+行政许可不予受理决定书
+08
+行政许可现场核查笔录
+09
+行政许可陈述申辩告知书
+10
+行政许可陈述申辩笔录
+11
+行政许可听证申请书
+12
+行政许可听证告知书
+13
+行政许可听证公告
+14
+行政许可听证通知书
+15
+行政许可听证笔录
+16
+行政许可延期决定通知书
+17
+行政许可特别程序期限告知书
+18
+行政许可现场检查笔录
+19
+行政许可责令(限期)改正通知书
+20
+整改情况材料
+21
+征求意见函
+22
+反馈意见
+23
+检验(检测、检疫、鉴定、评审等)委托书
+24
+检验(检测、检疫)结果、专家评审(鉴定)意见
+25
+送达凭证
+21
+
+===== 第 27 页 =====
+GB/T 42727—2023
+表 A.1 行政许可事项归档材料目录和排列顺序（续）
+序号
+归档材料目录
+26
+许可收费凭据
+27
+其他
+表 A.2 行政处罚事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政处罚决定书
+02
+立案审批表
+03
+调查(询问)笔录
+04
+现场检查(勘验)笔录
+05
+现场照片(图片、影像资料、电子数据的文字说明、截图)证据
+06
+责令(限期)改正通知书
+07
+整改情况材料
+08
+抽样取证通知书
+09
+抽样取证物品处理通知书
+10
+先行登记保存证据通知书
+11
+先行登记保存证据物品处理通知书
+12
+查封、扣押等行政强制措施材料
+13
+行政处罚事先告知书
+14
+陈述申辩笔录
+15
+听证通知书
+16
+听证笔录
+17
+案件移送函
+18
+移送案件涉案物品清单
+19
+罚没物品处理记录
+20
+行政决定履行催告书
+21
+陈述申辩意见(催告)
+22
+强制执行通知书
+23
+强制执行申请书
+24
+送达凭证
+25
+执行情况相关凭证
+26
+其他
+22
+
+===== 第 28 页 =====
+GB/T 42727—2023
+表 A.3 行政强制事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+查封(扣押)决定书
+02
+查封(扣押)物品清单
+03
+行政强制措施现场笔录
+04
+延长查封(扣押)期限决定书
+05
+检验、检测、检疫、技术鉴定期限告知书
+06
+解除查封(扣押)决定书
+07
+送达凭证
+80
+冻结存款(汇款)决定书
+09
+行政强制措施现场笔录
+10
+延长冻结存款(汇款)期限决定书
+11
+解除冻结存款(汇款)决定书
+12
+延长冻结存款(汇款)期限通知书
+13
+解除冻结存款(汇款)通知书
+14
+行政强制措施决定书
+15
+解除行政强制措施决定书
+16
+行政强制措施物品移送告知书
+17
+行政决定履行催告书
+18
+行政强制执行决定书
+19
+行政强制拆除公告
+20
+行政强制执行现场笔录
+21
+中止强制执行通知书
+22
+终结强制执行通知书
+23
+恢复强制执行通知书
+24
+划拨存款(汇款)决定书
+25
+划拨存款(汇款)通知书
+26
+代履行决定书
+27
+立即代履行事后通知书
+28
+当事人陈述申辩意见
+29
+法院裁定文书
+30
+强制执行申请书
+23
+
+===== 第 29 页 =====
+GB/T 42727—2023
+表 A.4 行政征收事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政征收决定书
+02
+立案审批表
+03
+调查(询问)笔录
+04
+现场检查(勘验)笔录
+05
+现场照片(图片、影像资料、电子数据、文字说明、截图)证据
+06
+行政征收告知书
+07
+陈述申辩笔录
+80
+听证通知书
+09
+听证笔录
+10
+强制执行通知书
+11
+行政决定履行催告书
+12
+陈述申辩笔录(催告)
+13
+强制执行申请书
+14
+送达凭证
+15
+执行情况相关凭证
+16
+其他
+表 A.5 行政给付事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政给付决定文件
+02
+行政给付申报材料
+03
+行政给付申报公示材料
+04
+行政给付核实材料
+05
+行政给付鉴定材料
+06
+行政给付听证材料
+07
+行政给付批准材料
+08
+送达回证
+09
+行政给付支付凭证
+24
+
+===== 第 30 页 =====
+GB/T 42727—2023
+表 A.6 行政检查事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政检查结果(责令整改)通知书
+02
+行政检查通知书
+03
+检查(询问)笔录
+04
+现场检查(勘验)笔录
+05
+现场照片(图片、影像资料、电子数据的文字说明、截图)证据
+表 A.7 行政确认事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政确认决定文件
+02
+行政确认申报材料
+03
+行政确认核实材料
+04
+行政确认听证材料
+05
+行政确认批准材料
+06
+送达回证
+表 A.8 行政奖励事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政奖励决定文件(证书)
+02
+行政奖励申报材料
+03
+行政奖励核实材料
+04
+行政奖励申报公示材料
+05
+行政奖励答辩材料
+06
+行政奖励评审材料
+07
+行政奖励结果公示材料
+80
+行政奖励批准材料
+表 A.9 行政裁决事项归档材料目录和排列顺序
+序号
+归档材料目录
+01
+行政裁决决定书
+02
+行政裁决申请书
+25
+
+===== 第 31 页 =====
+GB/T 42727-2023
+表A.9 行政裁决事项归档材料目录和排列顺序（续）
+序号
+归档材料目录
+03
+申请裁决证据材料
+04
+行政裁决受理通知书
+05
+行政裁决答辩书
+06
+答辩证据材料
+07
+审查材料
+08
+调解材料
+09
+裁决材料
+10
+送达回证
+其他类别事项和公共服务事项的归档材料目录参照上述附表确定。
+26
+
+===== 第 32 页 =====
+GB/T 42727—2023
+附录B
+(资料性)
+归档信息包的一般结构示例
+图B.1给出了一个政务服务事项办件办结归档时的信息包组织结构。
+归档信息包根目录
+归档文件夹
+01 行政许可决定书
+文件1.ofd
+02 行政许可申请表
+文件2. docx
+05 行政许可申请材料
+申请材料1
+文件3. wps
+文件4. jpg
+申请材料N
+电子证照5.ofd
+共享数据6.xml
+06 受理决定书
+文件7.ofd
+办件基本信息.xml
+办理流程信息.xml
+归档配置信息. xml
+注：“申请材料N”提供了以共享方式获取的材料的归档形式参照。如“电子证照5.ofd”为证照类共享材料，“共享
+数据6.xml”为结构化数据文档，一般包含共享数据及相关验证信息。
+图 B.1 归档信息包的一般结构示例
+27
+
+===== 第 33 页 =====
+GB/T 42727—2023
+附录 C
+(资料性)
+归档信息包的嵌套结构示例
+图C.1给出了一个已完成归档的政务服务事项办件在需要变更或补正电子文件组件及元数据后信
+息包的组织结构。
+归档信息包根目录
+归档文件夹
+原归档信息包. zip
+02行政许可申请表
+补充文件1.ofd
+05行政许可申请材料
+补充文件2. docx
+一补充文件3.jpg
+一补充文件4.ofd
+-办件基本信息.xml
+办理流程信息.xml
+-归档配置信息.xml
+图 C.1归档信息包的嵌套结构示例
+28
+
+===== 第 34 页 =====
+GB/T 42727—2023
+附录 D
+(资料性)
+政务服务事项电子文件元数据映射表
+表D.1～表D.3给出了政务服务事项电子文件元数据集合与GB/T 39046—2020、
+GB/T 39554.1—2020、GB/T 39554.2—2020、DA/T46—2009 的对应关系。具体包括归档配置信息元数据
+对应关系(见表D.1)、办件基本信息元数据对应关系(见表D.2)、办理流程信息元数据对应关系(见表D.3)。
+表 D.1 归档配置信息元数据映射表
+GB/T 39554.1—2020
+序号
+元素名称
+GB/T 39046—2020
+DA/T 46—2009
+GB/T 39554.2—2020
+A1
+事项类型
+事项类型
+事项类型
+A2
+事项实施编码
+实施编码
+实施编码
+A3
+业务办理项编码
+业务办理项编码
+A4
+业务办理项扩展码
+业务办理项扩展码
+A5
+事项名称
+事项名称
+事项名称
+A6
+实施主体编码
+实施主体代码
+实施主体编码
+A7
+实施主体名称
+实施主体
+实施主体
+A8
+事项版本
+事项版本
+A9
+保管期限
+M12保管期限
+A15
+归档材料目录名称
+材料名称
+材料形式
+A16
+归档配置辅助信息
+材料必要性
+A22
+格式信息
+M47 格式信息
+A23
+计算机文件名
+M48 计算机文件名
+A24
+计算机文件大小
+M49 计算机文件大小
+A26
+计算机文件存储路径
+M66 当前位置
+表 D.2 办件基本信息元数据映射表
+GB/T 39554.1—2020
+序号
+元素名称
+GB/T 39046—2020
+DA/T 46—2009
+GB/T 39554.2—2020
+B1
+电子文件号
+M7 电子文件号
+B2
+保管期限
+M12 保管期限
+B3
+密级
+M38 密级
+29
+
+===== 第 35 页 =====
+GB/T 42727—2023
+表 D.2 办件基本信息元数据映射表（续）
+GB/T 39554.1—2020
+序号
+元素名称
+GB/T 39046—2020
+DA/T 46—2009
+GB/T 39554.2—2020
+B4
+保密期限
+M39保密期限
+B6
+行政区划编码
+行政区划
+B7
+实施主体编码
+实施主体代码
+实施主体编码
+B8
+实施主体名称
+实施主体
+实施主体
+B12
+申请者名称
+申请者名称
+B14
+申请者通讯地址
+通讯地址
+B15
+申请者证件类型代码
+申请者证件类型代码
+B16
+申请者证件号码
+申请者证件号码
+B17
+联系人/代理人姓名
+联系人/代理人姓名
+联系人/代理人证件
+联系人/代理人证件
+B18
+类型代码
+类型代码
+B19
+联系人/代理人证件号码
+联系人/代理人证件号码
+B20
+联系人手机号码
+联系人手机号码
+B21
+法定代表人
+法定代表人
+B22
+申请时间
+申请时间
+B24
+受理单位名称
+受理单位名称
+B25
+受理时间
+受理时间
+B26
+办结时间
+办结时间
+B27
+办件编号
+办件编号
+B28
+办件类型
+办件类型
+办件类型
+B30
+结果证照名称
+结果证照名称
+B31
+结果证照编号
+结果证照编号
+B32
+结果证照有效期限始
+证照有效期限
+B33
+结果证照有效期限止
+证照有效期限
+B34
+事项实施编码
+实施编码
+实施编码
+B35
+业务办理项编码
+业务办理项编码
+B36
+业务办理项扩展码
+业务办理项扩展码
+B37
+事项版本
+事项版本
+B38
+事项类型
+事项类型
+事项类型
+30
+
+===== 第 36 页 =====
+GB/T 42727—2023
+表 D.2 办件基本信息元数据映射表（续）
+GB/T 39554.1—2020
+序号
+元素名称
+GB/T 39046—2020
+DA/T 46—2009
+GB/T 39554.2—2020
+B39
+信息系统描述
+M51 信息系统描述
+表 D.3 办理流程信息元数据映射表
+序号
+元素名称
+GB/T 39046—2020
+DA/T 46—2009
+说明
+C2
+环节名称
+环节名称
+M81 业务行为
+受理单位名称
+分别映射 GB/T 39046—2020
+C3
+经办部门名称
+处理单位名称
+事项受理基础数据集、事项办
+办理单位名称
+理基础数据集
+受理单位统一社会信用代码
+分别映射 GB/T 39046—2020
+C4
+经办部门编码
+处理单位统一社会信用代码
+事项受理基础数据集、事项办
+办理单位统一社会信用代码
+理基础数据集
+分别映射 GB/T 39046—2020
+受理人员
+事项受理基础数据集、事项办
+C5
+经办人
+环节处理人
+M77 机构人员名称
+理基础数据集、事项办结基础
+办理人姓名
+数据集
+C7
+意见内容
+环节处理意见
+M84 行为描述
+C8
+办理时间
+环节结束时间
+M82 行为时间
+31
+
+===== 第 37 页 =====
+GB/T 42727—2023
+附录E
+(资料性)
+元数据描述格式示例
+下面给出了归档配置信息的格式(见示例1)、办件基本信息的格式(见示例2)、办理流程信息的格
+式(见示例3)、数据交换目录的格式(见示例4)的示范。
+示例1：
+<? xml version= "1.0" encoding="UTF−8"? >
+<！--示例使用“title”属性展示元数据中文名称，可根据实际需要更改-->
+<description title="归档配置信息">
+<TaskType title="事项类型">行政许可</TaskType>
+<TaskCode title="事项实施编码">91350100M000100Y432000117006000</TaskCode>
+<BusinessCode title="业务办理项编码">91350100M000100Y43200011700600001</BusinessCode>
+<BusinessExtendedCode title="业务办理项扩展码"></BusinessExtendedCode>
+<TaskName title="事项名称">施工单位 A 证核准</TaskName>
+<DepartmentCode title="实施主体编码">91350100M000100Y43</DepartmentCode>
+<DepartmentName title="实施主体名称">某建设局</DepartmentName>
+<TaskVersion title="事项版本">2</TaskVersion>
+<RetentionPeriod title="保管期限">D30</RetentionPeriod>
+<MissingArchive title="容缺归档">
+<MissingFlag title="容缺归档标记">Y</MissingFlag>
+<MissingReason title="容缺归档原因">采取承诺制简化材料</MissingReason>
+</MissingArchive>
+<FilingRanges title="归档范围">
+<MaterialCatalog title="归档材料目录">
+<MaterialCatalogName title="归档材料目录名称">01 行政许可决定书</MaterialCatalogName>
+<Auxiliary title="归档配置辅助信息">必要</Auxiliary>
+</MaterialCatalog>
+<MaterialCatalog title= "归档材料目录">
+<MaterialCatalogName title="归档材料目录名称">05 行政许可申请材料</MaterialCatalogName>
+<MaterialCatalog title="归档材料目录">
+<MaterialCatalogName title="归档材料目录名称">申请材料 1</MaterialCatalogName>
+<Auxiliary title="归档配置辅助信息">必要</Auxiliary>
+<Auxiliary title="归档配置辅助信息">纸质归档</Auxiliary>
+<MissingMaterialFlag title="归档材料容缺归档标记">Y</MissingMaterialFlag>
+</MaterialCatalog>
+<MaterialCatalog title="归档材料目录">
+<MaterialCatalogName title="归档材料目录名称">申请材料 2</MaterialCatalogName>
+<Auxiliary title="归档配置辅助信息">必要</Auxiliary>
+</MaterialCatalog>
+</MaterialCatalog>
+<MaterialCatalog title="归档材料目录">
+<MaterialCatalogName title="归档材料目录名称">06 受理决定书</MaterialCatalogName>
+<！--“归档配置辅助信息”是对归档材料的必要性、载体类型以及多个材料存在性互斥等情况的描述，可参考
+三““““有
+32
+
+===== 第 38 页 =====
+GB/T 42727—2023
+<Auxiliary title="归档配置辅助信息">必要</Auxiliary>
+<Auxiliary title="归档配置辅助信息">组一</Auxiliary>
+</MaterialCatalog>
+<MaterialCatalog title="归档材料目录">
+<MaterialCatalogName title="归档材料目录名称">07 不予受理决定书</MaterialCatalogName>
+<Auxiliary title="归档配置辅助信息">必要</Auxiliary>
+<Auxiliary title="归档配置辅助信息">组一</Auxiliary>
+</MaterialCatalog>
+</FilingRanges>
+<ArchiveFiles title="办件归档组件">
+<FileDirectory title="归档文件目录">
+<FileDirectoryName title="文件目录名称">01 行政许可决定书</FileDirectoryName>
+<ArchiveFileInformation title="归档文件信息">
+<ComputerFileName title="计算机文件名">xxx行政许可决定书</ComputerFileName>
+<FormatInformation title="格式信息">OFD</FormatInformation>
+<ComputerFileSize title="计算机文件大小">0.5MB</ComputerFileSize>
+<ComputerFileCreationTime title="计算机文件形成时间">2021-07-11
+10:10:56</ComputerFileCreationTime>
+<ComputerFileStoragePath title="计算机文件存储路径">/91350100M000100Y43200011700600001-2021-
+D30-00000001/01行政许可决定书/xxx行政许可决定书.OFD
+</ComputerFileStoragePath>
+</ArchiveFileInformation>
+</FileDirectory>
+<FileDirectory title="归档文件目录">
+<FileDirectoryName title="文件目录名称">05 行政许可申请材料</FileDirectoryName>
+<FileDirectory title="归档文件目录">
+<FileDirectoryName title="文件目录名称">申请材料 2</FileDirectoryName>
+<ArchiveFileInformation title="归档文件信息">
+<ComputerFileName title="计算机文件名">申请书 1</ComputerFileName>
+<FormatInformation title="格式信息">OFD</FormatInformation>
+<ComputerFileSize title="计算机文件大小">1.1MB</ComputerFileSize>
+<ComputerFileCreationTime title="计算机文件形成时间">2021-07-11
+10:10:56</ComputerFileCreationTime>
+<ComputerFileStoragePath title="计算机文件存储路径">/91350100M000100Y43200011700600001-
+2021-D30-00000001/05行政许可申请材料/申请材料2/申请书1.OFD
+</ComputerFileStoragePath>
+</ArchiveFileInformation>
+<ArchiveFileInformation title="归档文件信息">
+<ComputerFileName title="计算机文件名">申请书 2</ComputerFileName>
+<FormatInformation title="格式信息">OFD</FormatInformation>
+<ComputerFileSize title="计算机文件大小">1.2MB</ComputerFileSize>
+<ComputerFileCreationTime title="计算机文件形成时间">2021-07-11
+10:10:56</ComputerFileCreationTime>
+<ComputerFileStoragePath title="计算机文件存储路径">/91350100M000100Y43200011700600001-
+2021-D30-00000001/05行政许可申请材料/申请材料2/申请书2.OFD
+</ComputerFileStoragePath>
+33
+
+===== 第 39 页 =====
+GB/T 42727—2023
+</ArchiveFileInformation>
+</FileDirectory>
+</FileDirectory>
+<FileDirectory title="归档文件目录">
+<FileDirectoryName title="文件目录名称">06 受理决定书</FileDirectoryName>
+<ArchiveFileInformation title="归档文件信息">
+<ComputerFileName title="计算机文件名">xxx受理决定书</ComputerFileName>
+<FormatInformation title="格式信息">OFD</FormatInformation>
+<ComputerFileSize title="计算机文件大小">0.5MB</ComputerFileSize>
+<ComputerFileCreationTime title="计算机文件形成时间">2021-07-11
+10:10:56</ComputerFileCreationTime>
+<ComputerFileStoragePath title="计算机文件存储路径">/91350100M000100Y43200011700600001-2021-
+D30-00000001/06受理决定书/xxx受理决定书.OFD
+</ComputerFileStoragePath>
+</ArchiveFileInformation>
+</FileDirectory>
+</ArchiveFiles>
+</description>
+示例2：
+<? xml version= "1.0" encoding= "UTF-8"? >
+<description title="办件基本信息">
+<DocumentNumber title="电子文件号">91350100M000100Y43200011700600001-2021-D30-00000001</Docu-
+mentNumber>
+<RetentionPeriod title="保管期限">D30</RetentionPeriod>
+<SecurityClassification title="密级">不涉密</SecurityClassification>
+<SecrecyPeriod title="保密期限"></SecrecyPeriod>
+<ArchiveTime title="归档时间">2021-07-11 17:23:41</ArchiveTime>
+<AreaCode title="行政区划编码">330000</AreaCode>
+<DepartmentCode title="实施主体编码">91350100M000100Y43</DepartmentCode>
+<DepartmentName title="实施主体名称">某建设局</DepartmentName>
+<LeadDepartment title="责任处(科)室">某某科</LeadDepartment>
+<ApplicantInformation title="申请者信息">
+<Applyer title="申请者">
+<ApplyerName title="申请者名称">张三</ApplyerName>
+<ApplyerMobile title="申请者手机">12345678910</ApplyerMobile>
+<ApplyerAddress title="申请者通讯地址">某某小区</ApplyerAddress>
+<ApplyerCardType title="申请者证件类型代码">111</ApplyerCardType>
+<ApplyerCardCode title="申请者证件号码">331000000000000000</ApplyerCardCode>
+</Applyer>
+<Applyer title="申请者">
+<ApplyerName title="申请者名称">李四</ApplyerName>
+<ApplyerMobile title="申请者手机">12345678910</ApplyerMobile>
+<ApplyerAddress title="申请者通讯地址">某某小区</ApplyerAddress>
+<ApplyerCardType title="申请者证件类型代码">111</ApplyerCardType>
+34
+
+===== 第 40 页 =====
+GB/T 42727—2023
+p000000000= 0dde
+</Applyer>
+</ApplicantInformation>
+<ContactName title="联系人/代理人姓名">张三</ContactName>
+<ContactType title="联系人/代理人证件类型代码">111</ContactType>
+<ContactCode title="联系人/代理人证件号码">331000000000000000</ContactCode>
+<ContactMobile title="联系人手机号码">12345678910</ContactMobile>
+<LegalMan title="法定代表人">张三</LegalMan>
+A/>1::1 1--1电 = me
+<ProjectName title="办件名称">关于张三申请施工单位的专职安全生产管理人员安全任职资格审批(C证延
+期)</ProjectName>
+<ReceiveDepartment title="受理单位名称">市某某局</ReceiveDepartment>
+<ReceiveTime title="受理时间">2021-07-11 15:23:41</ReceiveTime>
+<TransactTime title="办结时间">2021-07-11 16:23:41</TransactTime>
+<ProjectId title="办件编号">33000002201003130022016D300000019</ProjectId>
+<ServiceType title="办件类型">承诺件</ServiceType>
+<Result title="办理结果">批准</Result>
+<ResultCertName title="结果证照名称">建筑施工企业专职安全生产管理人员安全生产考核合格证书</Re-
+sultCertName>
+<ResultCertNo title="结果证照编号">浙 C(2021)234561</ResultCertNo>
+<ResultCertBeginDate title="结果证照有效期限始">2021-07-11</ResultCertBeginDate>
+<ResultCertEndDate title="结果证照有效期限止">2022-07-11</ResultCertEndDate>
+<TaskCode title="事项实施编码">91350100M000100Y432000117006000</TaskCode>
+<BusinessCode title="业务办理项编码">91350100M000100Y43200011700600001</BusinessCode>
+<BusinessExtendedCode title="业务办理项扩展码"></BusinessExtendedCode>
+<TaskVersion title="事项版本">2</TaskVersion>
+<TaskType title="事项类型">行政许可</TaskType>
+<InformationSystemDescription title="信息系统描述">xxx 审批系统</InformationSystemDescription>
+<Extensions title="扩展项"></Extensions>
+</description>
+示例3：
+<? xml version= "1.0" encoding= "UTF-8"? >
+<description title="办理流程信息">
+<Process title="办理流程">
+<NodeName title="环节名称">受理</NodeName>
+<DepartmentName title="经办部门名称">市某某局</Department>
+<DepartmentCode title="经办部门编码">91350100M000100Y43</DepartmentCode>
+<Author title="经办人">李四</Author>
+<Type title="意见类型">受理意见</Type>
+<t/>t= tdy>
+<Modified title="办理时间">2021-07-11 15:23:41</Modified>
+</Process>
+<Process title="办理流程">
+Nt/>t =t e>
+<DepartmentName title="经办部门名称">市某某局</Department>
+35
+
+===== 第 41 页 =====
+GB/T 42727—2023
+<DepartmentCode title="经办部门编码">91350100M000100Y43</DepartmentCode>
+<Author title="经办人">王五</Author>
+<Type title="意见类型">审核意见</Type>
+<Body title="意见内容">同意</Body>
+<Modified title="办理时间">2021-07-11 15:43:41</Modified>
+</Process>
+<Process title="办理流程">
+/>t = >
+<DepartmentName title="经办部门名称">市某某局</Department>
+<DepartmentCode title="经办部门编码">91350100M000100Y43</DepartmentCode>
+<Author title="经办人">赵六</Author>
+<Type title="意见类型">审定意见</Type>
+</>t= tdy>
+<Modified title="办理时间">2021-07-11 16:23:41</Modified>
+</Process>
+</description>
+示例 4：
+<? xml version= "1.0" encoding="UTF-8"? >
+<description title="数据交换目录">
+<SystemCode title="系统标识">3300000000</SystemCode>
+<BatchName title="批次号">20210701</BatchName>
+<SendDate title="交换 日期">2021-07-11</SendDate>
+<SendNumber title="归档包数量">2</SendNumber>
+<DirectoryInformation title="交换目录信息">
+<Directory title="交换目录">
+<DocumentNumber title="电子文件号">91350100M000100Y43200011700600001-2021-D30-00000001</
+DocumentNumber>
+<ProjectName title="办件名称">关于张三申请施工单位的专职安全生产管理人员安全任职资格审批(C证
+延期)</ProjectName>
+<ArchiveTime title="归档时间">2021-07-11 17:23:41</ArchiveTime>
+<DepartmentCode title="实施主体编码">91350100M000100Y43</DepartmentCode>
+<DepartmentName title="实施主体名称">某建设局</DepartmentName>
+</Directory>
+<Directory title="交换目录">
+000000-0-0-0000000000000000000000001000000000>
+DocumentNumber>
+<ProjectName title="申报名称">关于李四申请施工单位的专职安全生产管理人员安全任职资格审批(C证
+延期)</ProjectName>
+<ArchiveTime title="归档时间">2021-07-11 18:23:41</ArchiveTime>
+<DepartmentCode title="实施主体编码">91350100M000100Y43</DepartmentCode>
+<DepartmentName title="实施主体名称">某建设局</DepartmentName>
+</Directory>
+</DirectoryInformation>
+</description>
+36
+
+===== 第 42 页 =====
+GB/T 42727—2023
+参考文献
+[1]
+GB/T 2260—2007 中华人民共和国行政区划代码
+[2]
+GB/T19488.2—2008 电子政务数据元 第2部分：公共数据元目录
+[3 GB/T 39046—2020 政务服务平台基础数据规范
+[4] GB/T 39362—2020 党政机关电子公文归档规范
+[5] GB/T 39554.2—2020 全国一体化政务服务平台 政务服务事项基本目录及实施清单 第
+2部分：要素要求
+[6] GB/T 40756—2021 全国一体化政务服务平台线上线下融合工作指南
+[7] DA/T 46—2009 文书类电子文件元数据方案
+[8]
+DA/T 58—2014 电子档案管理基本术语
+[6]
+DA/T 70 文书类电子档案检测一般要求
+[10] GA/T 2000.156 公安信息代码 第156 部分：常用证件代码
+[11] 中华人民共和国档案法(中华人民共和国主席令第47号)
+[12]
+中华人民共和国行政许可法(中华人民共和国主席令第29号)
+[13]
+中华人民共和国电子签名法(中华人民共和国主席令第29号)
+[14]
+中华人民共和国行政强制法(中华人民共和国主席令第49号)
+[15]
+中华人民共和国行政处罚法(中华人民共和国主席令第70号)
+[16]
+国务院关于在线政务服务的若干规定(中华人民共和国国务院令第716号)
+[17] 机关文件材料归档范围和文书档案保管期限规定(中华人民共和国国家档案局令第8号)
+[18] 企业文件材料归档范围和档案保管期限规定(中华人民共和国国家档案局令第10号)
