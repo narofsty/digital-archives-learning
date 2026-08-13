@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "四川",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,7 +79,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -203,9 +204,9 @@
   },
   "active": "db7ce347ba9a83d2",
   "lastOpenFiles": [
-    "07_项目案例/肃北.md",
-    "07_项目案例/四川省测绘产品质量监督检查站单机版安装.md",
     "05_技术环境/Linux安装/Linux安装.md",
+    "07_项目案例/四川省测绘产品质量监督检查站单机版安装.md",
+    "07_项目案例/肃北.md",
     "05_技术环境/Linux安装/部署整体流程；.md",
     "03_档案系统知识/档案管理/01-分篇学习笔记/13-GBT-11821-2002 照片档案管理规范.md",
     "03_档案系统知识/档案管理/01-分篇学习笔记/12-DAT-63-2017 录音录像类电子档案元数据方案.md",
