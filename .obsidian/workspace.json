@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "su",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -201,7 +201,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "75fd9923db47e39e",
+  "active": "cef370874bf57a1e",
   "lastOpenFiles": [
     "07_项目案例/交投.md",
     "07_项目案例/江西投资燃气.md",
